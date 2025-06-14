@@ -20,6 +20,12 @@ body {
     font-size: 14px;
 }
 
-canvas {
+#three-container {
+    width: 800px;
+    height: 500px;
     border: 1px solid #ccc;
+}
+
+canvas {
+    display: block;
 }

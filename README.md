@@ -1,13 +1,14 @@
 # House Heating Simulation
 
-This project demonstrates a browser-based application for exploring heat flow within a house layout. It includes a simple grid layout editor, basic material properties, multiple radiators and an adjustable outside temperature. The simulation visualises temperature as a colour map which updates in real time.
+This project demonstrates a browser-based application for exploring heat flow within a house layout. It now provides a basic 3D visualisation so you can change the room size, position radiators and add features such as windows or curtains. Temperature is displayed as a colour map on cubes that update in real time.
 
 Features include:
 
-- Drawing walls, windows, doors and radiators on a grid plan
+- Drawing walls, windows, doors, curtains and radiators on a voxel grid
 - Selecting different wall materials with varying insulation values
 - Toggling radiators on and off and setting their temperature
 - Adjustable external temperature boundary
+- Resizable room with 3D heat visualisation
 - Basic heat conduction model with visual heat map
 
 The application is intended as a lightweight starting point for a more comprehensive heating simulator. It does not yet include multi-floor support or advanced airflow modelling, but the code is structured so that these capabilities could be added later.
