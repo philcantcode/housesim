@@ -61,3 +61,14 @@ Realistic default values based on common UK building standards
 
 The goal is to help homeowners optimize their heating systems by visualizing where heat goes, identifying cold spots, and testing solutions like additional insulation, curtains, or radiator repositioning before making real-world changes.
 Please build this as a complete, functional web application with realistic physics calculations and an engaging visual interface.
+
+## Development Setup
+
+This repository includes a small demonstration of a web-based house heating simulation. To run it locally, launch a simple HTTP server from the `src` directory:
+
+```bash
+cd src
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000` in your browser.
