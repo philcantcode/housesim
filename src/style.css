@@ -7,8 +7,17 @@ body {
     padding: 0;
 }
 
-#controls {
+#sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 10px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
 }
 
 canvas {
