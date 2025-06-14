@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Heating Simulation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/three@0.134.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
     <h1>House Heating Simulation</h1>
@@ -16,6 +18,7 @@
                 <option value="window">Window</option>
                 <option value="door">Door</option>
                 <option value="radiator">Radiator</option>
+                <option value="curtain">Curtain</option>
                 <option value="erase">Erase</option>
             </select>
         </div>
@@ -38,8 +41,23 @@
         <div class="panel">
             <button id="toggleAll">Toggle All Radiators</button>
         </div>
+        <div class="panel">
+            <label for="roomWidth">Width:</label>
+            <input id="roomWidth" type="number" value="10">
+        </div>
+        <div class="panel">
+            <label for="roomHeight">Height:</label>
+            <input id="roomHeight" type="number" value="10">
+        </div>
+        <div class="panel">
+            <label for="roomDepth">Depth:</label>
+            <input id="roomDepth" type="number" value="10">
+        </div>
+        <div class="panel">
+            <button id="applySize">Apply Room Size</button>
+        </div>
     </div>
-    <canvas id="canvas" width="800" height="500"></canvas>
+    <div id="three-container"></div>
 
     <script src="script.js"></script>
 </body>
