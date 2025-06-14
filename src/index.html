@@ -8,10 +8,38 @@
 </head>
 <body>
     <h1>House Heating Simulation</h1>
-    <div id="controls">
-        <button id="toggleHeat">Toggle Heat Source</button>
+    <div id="sidebar">
+        <div class="panel">
+            <label for="tool">Tool:</label>
+            <select id="tool">
+                <option value="wall">Wall</option>
+                <option value="window">Window</option>
+                <option value="door">Door</option>
+                <option value="radiator">Radiator</option>
+                <option value="erase">Erase</option>
+            </select>
+        </div>
+        <div class="panel">
+            <label for="material">Wall Material:</label>
+            <select id="material">
+                <option value="brick">Brick</option>
+                <option value="timber">Timber Frame</option>
+                <option value="concrete">Concrete</option>
+            </select>
+        </div>
+        <div class="panel">
+            <label for="radTemp">Radiator Temp (°C):</label>
+            <input id="radTemp" type="number" value="40">
+        </div>
+        <div class="panel">
+            <label for="extTemp">External Temp (°C):</label>
+            <input id="extTemp" type="number" value="5">
+        </div>
+        <div class="panel">
+            <button id="toggleAll">Toggle All Radiators</button>
+        </div>
     </div>
-    <canvas id="canvas" width="600" height="400"></canvas>
+    <canvas id="canvas" width="800" height="500"></canvas>
 
     <script src="script.js"></script>
 </body>
